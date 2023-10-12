@@ -1,0 +1,2 @@
+#!/bin/bash
+a=aa; while [ "$a" != "zz" ]; do echo "$a"; a=$(printf %c\\n "$((1 + 1#$(printf %d "$a")))"); done
